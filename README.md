@@ -1,1 +1,1 @@
-# [Jiabin Du's Homepage](https:jiabindu1.github.io/)
+# [Jiabin Du's Homepage](https:jiabindu.github.io/)
