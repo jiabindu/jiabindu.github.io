@@ -100,12 +100,17 @@ CONTENT="Jiabin Du Homepage, Algebraic Geometry, Mathematics, SIMIS, Shanghai In
  
 <!-----------------------------------页脚---------------------------------------------------->
 
+<!-- 教学名言 -->
+<div style="text-align:center; padding:20px 0 10px; font-size:15px; color:#666; font-style:italic; letter-spacing:1px;">
+The essence of teaching lies in conveying the beauty of mathematics.
+</div>
+
 <!-- 替代hr：极细分割线，上下间距很小 -->
 <div style="height:1px; background:#eee; margin:5px 20px;"></div>
 
 <!-- 底部 左访客 右更新日期 -->
 <div style="display:flex; justify-content:space-between; padding:10px 20px 25px; font-size:14px; color:#888;">
-    <div>Welcome! You are the <span id="visitor-count">0</span>-th visitor.</div>
+    <div>Welcome! You are the <span id="visitor-count">0</span> visitor.</div>
     <div id="last-update"></div>
 </div>
 
@@ -117,7 +122,17 @@ if(!sessionStorage.getItem('hasVisited')){
     localStorage.setItem('visitTotal', cnt);
     sessionStorage.setItem('hasVisited', '1');
 }
-document.getElementById('visitor-count').innerText = localStorage.getItem('visitTotal');
+
+// 自动加正确后缀 1st/2nd/3rd/4th
+function getOrdinal(n) {
+    if (n % 10 === 1 && n % 100 !== 11) return n + "st";
+    if (n % 10 === 2 && n % 100 !== 12) return n + "nd";
+    if (n % 10 === 3 && n % 100 !== 13) return n + "rd";
+    return n + "th";
+}
+
+let total = localStorage.getItem('visitTotal') || 0;
+document.getElementById('visitor-count').innerText = getOrdinal(total);
 
 // 自动更新日期
 const now = new Date();
@@ -126,8 +141,6 @@ const m = String(now.getMonth() + 1).padStart(2, '0');
 const d = String(now.getDate()).padStart(2, '0');
 document.getElementById('last-update').innerText = `Last Updated: ${y}-${m}-${d}`;
 </script>
-
-
 
    <!--<h4 align="right">Last updated: April, 2026 </h4>-->
   <!-- <footer>
