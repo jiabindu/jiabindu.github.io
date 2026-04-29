@@ -96,7 +96,22 @@ CONTENT="Jiabin Du Homepage, Algebraic Geometry, Mathematics, SIMIS, Shanghai In
  
 <!-----------------------------------页脚---------------------------------------------------->
     <hr>
-   <h4 align="right">Last updated: April, 2026 </h4>
+
+<!-- 底部左端访客统计 + 右端更新日期 -->
+<div style="display:flex; justify-content:space-between; padding:15px 20px 30px; font-size:14px; color:#888;">
+    <div>Total Visitors: <span id="visitor-count">Loading...</span></div>
+    <div>Last Updated: 2026-04-29</div>
+</div>
+
+<script>
+// 访客计数
+fetch('https://api.countapi.xyz/hit/'+window.location.hostname+'/visit')
+.then(res=>res.json())
+.then(data=>{
+    document.getElementById('visitor-count').innerText = data.value;
+})
+</script>
+   <!--<h4 align="right">Last updated: April, 2026 </h4>-->
   <!-- <footer>
       <p class="right-aligned">Last updated: June 24, 2024</p>
    </footer>-->
