@@ -5,15 +5,9 @@
     <title>Jiabin Du's homepage</title>
     <META HTTP-EQUIV="Keywords" CONTENT="Jiabin Du Homepage, Algebraic Geometry, Mathematics, SIMIS, Shanghai Institute for Mathematics and Interdisciplinary Sciences, 杜佳宾 数学, 上海数学与交叉学科研究院">
     <style>
-        /* 全局：取消强制字体放大，留白缩小为30px，适中不贴边也不过远 */
         body {
-            padding: 0 30px;/* 离网页边缘左右边距远近控制留白缩小为30px， 想再宽一点：padding: 0 40px; */
-             /* 删除这两行
-            max-width: 1200px;
-            margin: 0 auto;
-             */
+            padding: 0 30px;
         }
-        /* 全局基础样式 */
         #header {
             text-align: center;
             padding:5px;
@@ -23,14 +17,13 @@
             padding:5px;
         }
         div {
-            margin: 25px 0; /* 删除原来左右70px，统一由body控制边距 */
+            margin: 25px 0;
             border: 1px none;
         }
         p.big {
             line-height: 1.8;
             font-size: 18px;
         }
-        /* 标题字号放大 */
         h2 {
             font-size: 24px;
             margin-top: 30px;
@@ -43,39 +36,38 @@
         }
         h1 {
             font-size: 30px;
-            margin-left: 0; /* 取消单独左偏移，统一页面缩进 */
+            margin-left: 0;
         }
-        /* 全局链接取消下划线，删除自定义深蓝，恢复默认蓝色 */
         a {
             text-decoration: none;
         }
         a:hover {
             text-decoration: underline;
         }
-        /* CV列表专用样式，加宽间距 */
         .cv-list li {
             margin: 14px 0;
             line-height: 1.7;
         }
-        /* 研究方向列表文字大小 */
         li.big {
             font-size: 18px;
             margin: 8px 0;
         }
-        /* 分割线全局统一 */
         .divider {
             height:1px;
             background:#eee;
             margin:15px 0;
         }
-        /* Activities列表加大上下间距 */
         .activity-list li {
             margin: 12px 0;
+        }
+        /* 强制所有层级无序列表统一实心黑点，解决空心圆圈问题 */
+        ul {
+            list-style-type: disc !important;
         }
     </style>
 </head>
 <body bgcolor="#FFFFFF">
-<!-- 页眉：姓名、单位、联系方式（字体放大） -->
+<!-- 页眉：姓名、单位、联系方式 -->
 <h1>Jiabin Du（杜佳宾）</h1>
 <div style="width: 55%; margin-left: 0;">
     <p class="big" style="line-height:2;">
@@ -87,113 +79,104 @@
     </p>
 </div>
 <div class="divider"></div>
-<!-- Short CV 教育与工作经历 -->
-    <details>
-    <!--<details open>默认展开-->
+
+<!-- Short CV -->
+<details>
     <summary style="font-size:24px; font-weight:bold; cursor:pointer; margin:30px 0 12px;">Short CV</summary>
     <ul class="cv-list">
-        <!-- <li>Aug. 2026 – present, Associate Research Fellow, Chern Institute of Mathematics, Nankai University</li> -->
-        <li>2024-2026, Postdoc, Shanghai Institute for Mathematics and Interdisciplinary Sciences (SIMIS)</li>
-        Postdoc research report： Zero-cycles, holomorphic one-forms and canonical degrees on algebraic varieties, SIMIS, 2026<br><br>
-        <li>2022–2024, Postdoc, Shanghai Center for Mathematical Sciences, Fudan University</li>
-         Postdoc research report：Cohomological rank functions and irregular surfaces with small invariants, Fudan University, 2024<br><br>
-        <li>2018–2022, Ph.D. in Mathematics, Xiamen University. Advisor: Prof. Wenfei Liu</li>
-         Ph.D. thesis： On the action of symplectic automorphisms of fibred surfaces on CH_0, Xiamen University, 2022<br><br>
-        <li>2016–2018, M.S. in Mathematics, University of Science and Technology of China</li><br>
+        <li>2024-2026, Postdoc, Shanghai Institute for Mathematics and Interdisciplinary Sciences (SIMIS)<br>
+        Postdoc research report： Zero-cycles, holomorphic one-forms and canonical degrees on algebraic varieties, SIMIS, 2026</li>
+        <li>2022–2024, Postdoc, Shanghai Center for Mathematical Sciences, Fudan University<br>
+        Postdoc research report：Cohomological rank functions and irregular surfaces with small invariants, Fudan University, 2024</li>
+        <li>2018–2022, Ph.D. in Mathematics, Xiamen University. Advisor: Prof. Wenfei Liu<br>
+        Ph.D. thesis： On the action of symplectic automorphisms of fibred surfaces on CH_0, Xiamen University, 2022</li>
+        <li>2016–2018, M.S. in Mathematics, University of Science and Technology of China</li>
         <li>2012–2016, B.S. in Mathematics, Henan Normal University</li>
     </ul>
 </details>
 <br>
 <div class="divider"></div>
-<!-- 研究方向 -->
-     <details>
-    <!--<details open>默认展开-->
+
+<!-- Research Interests -->
+<details>
     <summary style="font-size:24px; font-weight:bold; cursor:pointer; margin:30px 0 12px;">Research Interests</summary>
+    <p>My research focuses on Algebraic Geometry. More precisely I am interested in the following topics:</p>
     <ul class="cv-list">
-<p>My research focuses on Algebraic Geometry. More precisely I am interested in the following topics:</p>
-<ul>
-    <li class="big">Algebraic Surfaces</li>
-    <li class="big">Geography of threefolds of general type</li>
-    <li class="big">Abelian varieties</li>
-    <li class="big">Algebraic cycles</li>
-     <li class="big">Topology of algebraic varieties</li>
-</ul>
+        <li class="big">Algebraic Surfaces</li>
+        <li class="big">Geography of threefolds of general type</li>
+        <li class="big">Abelian varieties</li>
+        <li class="big">Algebraic cycles</li>
+        <li class="big">Topology of algebraic varieties</li>
+    </ul>
 </details>
 <br>
 <div class="divider"></div>
-<!-- 论文与预印本 -->
-     <details>
-    <!--<details open>默认展开-->
+
+<!-- Publications & Preprints -->
+<details>
     <summary style="font-size:24px; font-weight:bold; cursor:pointer; margin:30px 0 12px;">Publications & Preprints</summary>
     <ul class="cv-list">
-<ul>
-    <li>
-        <p class="big">
-            <a href="https://doi.org/10.48550/arXiv.2606.31170">On the canonical degree of a Gorenstein minimal threefold of general type</a>, (with Y. Hu)<br>
-            <strong>Preprint 2026</strong> arXiv: 2606.31170.
-        </p>
-    </li>
-    <li>
-        <p class="big">
-            <a href="https://doi.org/10.48550/arXiv.2606.08185">Geometry of holomorphic one-forms on smooth projective varieties</a>, (with F. Hao, H. Li and Z. Wang)<br>
-            <strong>Preprint 2026</strong> arXiv: 2606.08185.
-        </p>
-    </li>
-    <li>
-        <p class="big">
-            <a href="https://doi.org/10.2140/pjm.2026.342.259">Symplectic automorphisms of a surface with genus two fibration and their action on CH_0</a>, (with W. Liu)<br>
-            <strong>Pacific Journal of Mathematics</strong> Vol. 342 (2026), no. 2, 259–273.
-        </p>
-    </li>
-    <li>
-        <p class="big">
-            <a href="https://doi.org/10.1007/s00208-025-03226-2">Cohomological rank functions and surfaces of general type with p_g=q=2</a>, (with Z. Jiang and G. Zhang)<br>
-            <strong>Mathematische Annalen</strong> Vol. 393 (2025), no. 1, 1–38.
-        </p>
-    </li>
-    <li>
-        <p class="big">
-            <a href="https://doi.org/10.1007/s11425-021-1950-3">On symplectic automorphisms of elliptic surfaces acting on CH_0</a>, (with W. Liu) <br>
-            <strong>Science China Mathematics</strong> Vol. 66 (2023), no. 3, 443–456.
-        </p>
-    </li>
-</ul>
-    </details>
+        <li>
+            <p class="big">
+                <a href="https://doi.org/10.48550/arXiv.2606.31170">On the canonical degree of a Gorenstein minimal threefold of general type</a>, (with Y. Hu)<br>
+                <strong>Preprint 2026</strong> arXiv: 2606.31170.
+            </p>
+        </li>
+        <li>
+            <p class="big">
+                <a href="https://doi.org/10.48550/arXiv.2606.08185">Geometry of holomorphic one-forms on smooth projective varieties</a>, (with F. Hao, H. Li and Z. Wang)<br>
+                <strong>Preprint 2026</strong> arXiv: 2606.08185.
+            </p>
+        </li>
+        <li>
+            <p class="big">
+                <a href="https://doi.org/10.2140/pjm.2026.342.259">Symplectic automorphisms of fibered surfaces and their action on CH_0</a>, (with W. Liu)<br>
+                <strong>Pacific Journal of Mathematics</strong> Vol. 342 (2026), no. 3, 259–273.
+            </p>
+        </li>
+        <li>
+            <p class="big">
+                <a href="https://doi.org/10.1007/s00208-025-03226-2">Cohomological rank functions for surfaces of general type with small invariants</a>, (with Z. Jiang and G. Zhang)<br>
+                <strong>Mathematische Annalen</strong> Vol. 393 (2025), no. 1, 1–38.
+            </p>
+        </li>
+        <li>
+            <p class="big">
+                <a href="https://doi.org/10.1007/s11425-021-1950-3">Elliptic fibrations and symplectic automorphisms</a>, (with W. Liu) <br>
+                <strong>Science China Mathematics</strong> Vol. 66 (2023), no. 3, 443–456.
+            </p>
+        </li>
+    </ul>
+</details>
 <div class="divider"></div>
-    <!-- 教学 -->
-    <details>
+
+<!-- Teaching -->
+<details>
     <summary style="font-size:24px; font-weight:bold; cursor:pointer; margin:30px 0 12px;">Teaching</summary>
     <ul class="cv-list">
         <li>2026 Spring, Vector bundles on curves </li>
         <li>2025 Fall, Algebraic surfaces</li>
         <li>2025 Spring, Algebraic curves </li>
-        <li>2024  Spring, Exercises/Discussion on Modern Algebra</li>
-        <li>2023  Spring, Exercises on Advanced Algebra; Exercises/Discussion on Modern Algebra</li>
-        <li> Lectures on moduli of curves, July 14-18，2025 summer, at Nanchang University</li>
+        <li>2024 Spring, Exercises/Discussion on Modern Algebra</li>
+        <li>2023 Spring, Exercises on Advanced Algebra; Exercises/Discussion on Modern Algebra</li>
+        <li>Lectures on moduli of curves, July 14-18，2025 summer, Nanchang University</li>
     </ul>
 </details>
-    <div class="divider"></div>
+<div class="divider"></div>
 
-     <!-- 报告 -->
-    <details>
+<!-- Talks -->
+<details>
     <summary style="font-size:24px; font-weight:bold; cursor:pointer; margin:30px 0 12px;">Talks</summary>
     <ul class="cv-list">
-        <a href="Talks.html">Talks</a>
+        <li><a href="Talks.html">All Talks Slides & Abstracts</a></li>
     </ul>
 </details>
-<!--<h2>Activities</h2><ul class="activity-list">
-    <li><h3 style="display:inline; font-size:20px;">Algebraic Geometry Seminar</h3></li>
-    <li><h3 style="display:inline; font-size:20px;"><a href="Talks.html">Talks</a></h3></li></ul>
 <div class="divider"></div>
-<h2>Useful Links</h2>
-<ul class="activity-list">
-    <li><h3 style="display:inline; font-size:20px;"><a href="Tools.html">Tools</a></h3></li>
-</ul>-->
-<div class="divider"></div>
+
 <!-- 页脚更新时间 -->
 <div style="display:flex; justify-content:space-between; padding:10px 0 25px; font-size:14px; color:#888;">
     <div></div>
-    <div>Last Updated: 2026-07-01</div>
+    <div>Last Updated: 2026-07-15</div>
 </div>
 </body>
 </html>
