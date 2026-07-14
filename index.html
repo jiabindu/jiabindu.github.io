@@ -8,6 +8,10 @@
         /* 全局默认字体放大 */
         body {
             font-size: 17px;
+            /* 新增：整体页面左右留白，解决贴左边 */
+            padding: 0 60px;
+            max-width: 1200px;
+            margin: 0 auto;
         }
         /* 全局基础样式 */
         #header {
@@ -19,7 +23,7 @@
             padding:5px;
         }
         div {
-            margin: 25px 70px;
+            margin: 25px 0; /* 删除原来左右70px，统一由body控制边距 */
             border: 1px none;
         }
         p.big {
@@ -39,7 +43,7 @@
         }
         h1 {
             font-size: 30px;
-            margin-left: 70px;
+            margin-left: 0; /* 取消单独左偏移，统一页面缩进 */
         }
         /* 全局链接取消下划线 */
         a {
@@ -63,7 +67,7 @@
         .divider {
             height:1px;
             background:#eee;
-            margin:15px 20px;
+            margin:15px 0;
         }
         /* Activities列表加大上下间距 */
         .activity-list li {
@@ -164,7 +168,6 @@
         <p class="big">
             Zero-cycles, holomorphic one-forms and canonical degrees on algebraic varieties, Postdoc research report, SIMIS, 2026<br>
         </p>
-    </li>
     </ul>
 <div class="divider"></div>
 
@@ -187,7 +190,7 @@
 <div class="divider"></div>
 
 <!-- 页脚更新时间 -->
-<div style="display:flex; justify-content:space-between; padding:10px 20px 25px; font-size:14px; color:#888;">
+<div style="display:flex; justify-content:space-between; padding:10px 0 25px; font-size:14px; color:#888;">
     <div></div>
     <div>Last Updated: 2026-07-01</div>
 </div>
